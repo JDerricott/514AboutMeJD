@@ -15,10 +15,13 @@
 {% block app_navigation_items %}
   {% url 'jeff_derricott:home' as home_url %}
   {% url 'jeff_derricott:Mockups' as Mockups_url %}
+  {% url 'jeff_derricott:proposal' as proposal_url %}
 
-  <<li class="title">App Navigation</li>
+  <li class="title">App Navigation</li>
   <li class="{% if request.path == home_url %}active{% endif %}"><a href="{{ home_url }}">Home Page</a></li>
   <li class="{% if request.path == Mockups_url %}active{% endif %}"><a href="{{ Mockups_url }}">Mockups for Motus</a></li>
+  <li class="{% if request.path == proposal_url %}active{% endif %}"><a href="{{ proposal_url }}">Proposal for Motus</a></li>
+
 {% endblock %}
 
 {% block app_content %}

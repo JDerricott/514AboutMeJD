@@ -77,3 +77,8 @@ def home(request):
 def Mockups(request):
     context = {}
     return render(request, 'jeff_derricott/Mockups.html', context)
+
+@login_required()
+def proposal(request):
+    context = {}
+    return render(request, 'jeff_derricott/proposal.html', context)

@@ -34,6 +34,11 @@ class JeffDerricott(TethysAppBase):
                 url='Mockups',
                 controller='jeff_derricott.controllers.Mockups'
             ),
+            UrlMap(
+                name='proposal',
+                url='proposal',
+                controller='jeff_derricott.controllers.proposal'
+            ),
         )
 
         return url_maps

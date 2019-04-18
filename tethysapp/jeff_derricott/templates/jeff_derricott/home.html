@@ -1,0 +1,40 @@
+{% extends "jeff_derricott/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+<h1>Jeff Derricott</h1>
+<p>
+  My name is Jeff Derricott! I am graduating in a week! Woot! I have been blessed with a lot of experiences here at BYU. I wish I could convey
+  in pictures and words all the amazing things about BYU and this department in this app. However, I will just direct you to go to a link
+  that describes my major and some things I have learned.
+</p>
+<p>
+  I am the youngest of 5 kids. I have a great life because of BOTH the good times and bad times.
+</p>
+<p>
+  I love hiking, yoga, reading, running, cooking, and gardening!
+</p>
+<p>
+  The icon for this app is a well known architectural drawing by Palladio.
+</p>
+
+<div id="pictures">
+  <img src="../../../static/jeff_derricott/images/Jeff_Derricott.jpg" style="width: 25%; height: 25%;"/>
+</div>
+
+
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}

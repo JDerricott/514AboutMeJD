@@ -1,0 +1,26 @@
+{% extends "jeff_derricott/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+<p>
+    The following images are mockups of the app Hart and I built...Motus, a ground motion acceleration calculator.
+</p>
+<div id="pictures">
+  <img src="../../../static/jeff_derricott/images/motus1.png" style="width: 50%; height: 50%;">
+    <img src="../../../static/jeff_derricott/images/motus2.png" style="width: 50%; height: 50%;">
+</div>
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}
